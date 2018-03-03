@@ -31,16 +31,6 @@ public class FileUtil {
                 sb.append("\r\n");
             }
             outputStream.write(sb.toString().getBytes());
-//            content.forEach(row -> {
-//                try {
-//                    row.forEach(column -> sb.append(column).append(connector));
-//                    sb.delete(sb.length() - connector.length(), sb.length() - 1);
-//                    outputStream.write(sb.toString().getBytes());
-//                    outputStream.write("\r\n".getBytes());
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            });
             outputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
