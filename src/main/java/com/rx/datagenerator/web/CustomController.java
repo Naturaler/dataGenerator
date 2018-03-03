@@ -24,5 +24,10 @@ public class CustomController {
         service.create(rowData);
         return "file create successful !";
     }
+
+    @GetMapping("/sql")
+    public String sql() {
+        return "sql";
+    }
 }
 
