@@ -132,17 +132,17 @@ public class TimeData extends BaseDataCreator {
         public Long getTime() {
             switch (unit) {
                 case Calendar.YEAR:
-                    return new Long(365 * 24 * 60 * 60 * 1000);
+                    return (365 * 24 * 60 * 60 * 1000L);
                 case Calendar.MONTH:
-                    return new Long(30 * 24 * 60 * 60 * 1000);
+                    return (30 * 24 * 60 * 60 * 1000L);
                 case Calendar.DAY_OF_YEAR:
-                    return new Long(24 * 60 * 60 * 1000);
+                    return (24 * 60 * 60 * 1000L);
                 case Calendar.HOUR_OF_DAY:
-                    return new Long(60 * 60 * 1000);
+                    return (60 * 60 * 1000L);
                 case Calendar.MINUTE:
-                    return new Long(60 * 1000);
+                    return (60 * 1000L);
                 case Calendar.SECOND:
-                    return new Long(1000);
+                    return 1000L;
                 default:
                     throw new TypeMissMatchException();
             }
