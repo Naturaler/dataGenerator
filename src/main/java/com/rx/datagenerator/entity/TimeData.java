@@ -164,7 +164,6 @@ public class TimeData extends BaseDataCreator {
         }
 
         Unit(Integer unit) {
-
             this.unit = unit;
         }
     }
